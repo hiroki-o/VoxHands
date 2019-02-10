@@ -272,15 +272,16 @@ namespace Vox.Hands {
 			singleFieldRect.y += EditorGUIUtility.singleLineHeight;
 
 			singleFieldRect.y += 12f;
-			
-			var presetAsset = HandPosePresetsAsset.GetPresetsAsset();
-			var posRect = new Rect(position.x, singleFieldRect.y, position.width, 174f);
-			var viewRect = new Rect(0f, 0f, position.width, 174f);
 
-			m_presetScroll = GUI.BeginScrollView( posRect, m_presetScroll, viewRect, false, false);
+			var presetAsset = HandPosePresetsAsset.GetPresetsAsset();
 			var presets = string.IsNullOrEmpty(m_presetFilter)
 				? presetAsset.SavedPresets
 				: presetAsset.SavedPresets.Where(p => p.Name.ToLower().Contains(m_presetFilter.ToLower()));
+			
+			var posRect = new Rect(position.x, singleFieldRect.y, position.width, 174f);
+			var viewRect = new Rect(0f, 0f, presets.Count() * 154f, 150f);
+
+			m_presetScroll = GUI.BeginScrollView( posRect, m_presetScroll, viewRect, true, false);
 			
 			var buttonRect = new Rect(0f, 0f, 150f, 150f);
 			

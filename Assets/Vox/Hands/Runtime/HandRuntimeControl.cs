@@ -34,6 +34,59 @@ namespace Vox.Hands
         public FingerPoseData middle;
         public FingerPoseData ring;
         public FingerPoseData little;
+
+        public const int HumanFingerCount = 5;
+        
+        public FingerPoseData this[int idx]
+        {
+            get
+            {
+                if (idx < 0 || idx >= HumanFingerCount)
+                {
+                    throw new IndexOutOfRangeException();
+                }
+
+                switch (idx)
+                {
+                    case 0:
+                        return thumb;
+                    case 1:
+                        return index;
+                    case 2:
+                        return middle;
+                    case 3:
+                        return ring;
+                    default:
+                        return little;
+                }
+            }
+
+            set
+            {
+                if (idx < 0 || idx >= HumanFingerCount)
+                {
+                    throw new IndexOutOfRangeException();
+                }
+                switch (idx)
+                {
+                    case 0:
+                        thumb = value;
+                        break;
+                    case 1:
+                        index = value;
+                        break;
+                    case 2:
+                        middle = value;
+                        break;
+                    case 3:
+                        ring = value;
+                        break;
+                    default:
+                        little = value;
+                        break;
+                }
+            }
+        }
     }
 
     public class HandRuntimeControl
@@ -66,8 +119,6 @@ namespace Vox.Hands
             m_humanPose.bodyPosition = Vector3.zero;
             m_humanPose.bodyRotation = Quaternion.identity;
             
-            // get current human pose
-            //m_poseHandler.GetHumanPose(ref m_humanPose);
             var i = 0;
             m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.thumb.muscle1;
             m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.thumb.spread;

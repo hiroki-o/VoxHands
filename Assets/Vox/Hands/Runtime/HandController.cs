@@ -24,6 +24,15 @@ namespace Vox.Hands
             InitializeRuntimeControl();
         }
 
+        public void SetHandPose(ref HandPoseData data)
+        {
+            if (m_runtimeControl == null)
+            {
+                InitializeRuntimeControl();
+            }
+            m_handPoseData = data;
+        }
+
         public void InitializeRuntimeControl()
         {
             var animator = GetComponent<Animator>();

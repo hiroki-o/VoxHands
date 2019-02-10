@@ -24,6 +24,14 @@ namespace Vox.Hands
         public float muscle2;
         [Range(-1f, 1f)]
         public float muscle3;
+        
+        public void WeightedAddPose(float weight, ref FingerPoseData data)
+        {
+            spread += weight * data.spread;
+            muscle1 += weight * data.muscle1;
+            muscle2 += weight * data.muscle2;
+            muscle3 += weight * data.muscle3;
+        }
     }
 
     [Serializable]
@@ -86,6 +94,15 @@ namespace Vox.Hands
                         break;
                 }
             }
+        }
+
+        public void WeightedAddPose(float weight, ref HandPoseData data)
+        {
+            thumb.WeightedAddPose(weight, ref data.thumb);
+            index.WeightedAddPose(weight, ref data.index);
+            middle.WeightedAddPose(weight, ref data.middle);
+            ring.WeightedAddPose(weight, ref data.ring);
+            little.WeightedAddPose(weight, ref data.little);
         }
     }
 

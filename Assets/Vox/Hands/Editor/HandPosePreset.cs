@@ -25,7 +25,14 @@ namespace Vox.Hands
         public string Name
         {
             get => m_name;
-            set => m_name = value;
+            set
+            {
+                m_name = value;
+                if (m_handPoseImage != null)
+                {
+                    m_handPoseImage.name = value;
+                }
+            }
         }
             
         public HandPoseData HandPoseData

@@ -1,7 +1,4 @@
 # VoxHands
-Hand Controller for Humanoid
-
-# VoxBlend
 A Hand/Finger Controller plugin for Unity.
 
 ![Top](/Docs/top.gif)

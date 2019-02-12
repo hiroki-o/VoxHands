@@ -1,12 +1,12 @@
 # VoxHands
-Hand Controller for Humanoid
-
-# VoxBlend
 A Hand/Finger Controller plugin for Unity.
 
 ![Top](/Docs/top.gif)
 
 VoxHands enables to control fingers with humanoid muscle rigs. It also comes with preset, and let you export finger gestures in animation clip, and also support Timeline.
+
+## Video
+- [YouTube Video](https://www.youtube.com/watch?v=4Sxhn_YQOFw&feature=youtu.be)
 
 Notice
 -------

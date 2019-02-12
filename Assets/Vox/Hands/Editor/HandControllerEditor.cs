@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEditor;
 
@@ -268,8 +269,8 @@ namespace Vox.Hands {
 
 			m_selectPoint = new Vector2
 			{
-				x = (SceneView.lastActiveSceneView.camera.pixelWidth - kPresetIconSize) / 2f,
-				y = (SceneView.lastActiveSceneView.camera.pixelHeight - kPresetIconSize) / 2f
+				x = (SceneView.lastActiveSceneView.position.width - kPresetIconSize) / 2f,
+				y = (SceneView.lastActiveSceneView.position.height - kPresetIconSize) / 2f
 			};
 		}
 
@@ -285,13 +286,19 @@ namespace Vox.Hands {
 			{
 				var currentRT = RenderTexture.active;
 				RenderTexture.active = camera.targetTexture;
+
+				// for upper-resolution display such as Retina, pixel vs screen coordinate is different.
+				var resolutionRatio = Mathf.Round(SceneView.lastActiveSceneView.camera.pixelHeight / SceneView.lastActiveSceneView.position.height);
 				
 				// Camera coordinate Y is inverted from mouse coordinate
-				var cameraY = camera.targetTexture.height - m_selectPoint.y - kPresetIconSize;
+				var cameraY = camera.targetTexture.height - resolutionRatio * (m_selectPoint.y + kPresetIconSize);
+				var cameraX = resolutionRatio * m_selectPoint.x;
+
+				var texSize = Mathf.FloorToInt(kPresetIconSize * resolutionRatio);
 
 				// Make a new texture and read the active Render Texture into it.
-				m_presetCaptureIcon = new Texture2D(kPresetIconSize, kPresetIconSize);
-				m_presetCaptureIcon.ReadPixels(new Rect(m_selectPoint.x, cameraY, kPresetIconSize, kPresetIconSize), 0, 0);
+				m_presetCaptureIcon = new Texture2D(texSize, texSize);
+				m_presetCaptureIcon.ReadPixels(new Rect(cameraX, cameraY, texSize, texSize), 0, 0);
 				m_presetCaptureIcon.Apply();
 				m_presetCaptureIcon.name = m_newPresetName;
 
@@ -312,6 +319,12 @@ namespace Vox.Hands {
 			
 			if (capture)
 			{
+				if (m_presetCaptureIcon.width != kPresetIconSize)
+				{
+					var scale = (float)kPresetIconSize / (float)m_presetCaptureIcon.width;
+					m_presetCaptureIcon = TextureUtility.CreateScaledTexture(m_presetCaptureIcon, scale);
+				}
+				
 				m_handPoseUtility.SaveCurrentToPreset(m_newPresetName, m_presetCaptureIcon);			
 			}
 		}

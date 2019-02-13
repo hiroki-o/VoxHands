@@ -24,7 +24,10 @@ namespace Vox.Hands
 
         public string Name
         {
-            get => m_name;
+            get
+            {
+                return m_name;
+            }
             set
             {
                 m_name = value;
@@ -37,14 +40,16 @@ namespace Vox.Hands
             
         public HandPoseData HandPoseData
         {
-            get => m_handPoseData;
-            set => m_handPoseData = value;
+            get { return m_handPoseData; }
+            set { m_handPoseData = value; }
         }
 
         public Texture2D HandPoseImage
         {
-            get => m_handPoseImage;
-            set => m_handPoseImage = value;
+            get  {
+                return m_handPoseImage;
+        }
+            set { m_handPoseImage = value; }
         }
     }
 }

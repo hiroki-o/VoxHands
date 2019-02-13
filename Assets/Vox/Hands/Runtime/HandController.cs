@@ -34,8 +34,14 @@ namespace Vox.Hands
 
         public HandPosePresetsAsset Preset
         {
-            get => m_preset;
-            set => m_preset = value;
+            get
+            {
+                return m_preset;
+            }
+            set
+            {
+                m_preset = value;
+            }
         }
 
         private void Awake()
@@ -78,6 +84,7 @@ namespace Vox.Hands
             m_basePose = pose;
         }        
         
+        
         /// <summary>
         /// Set hand pose.  
         /// </summary>
@@ -116,27 +123,24 @@ namespace Vox.Hands
 
         private static void LerpHandPose(ref HandPoseData data, ref HandPoseData src, ref HandPoseData dst, float t)
         {
-            switch (t)
+            if (t == 0f)
             {
-                case 0f:
-                    data = src;
-                    break;
-                case 1.0f:
-                    data = dst;
-                    break;
-                default:
+                data = src;
+            } else if (t == 1.0f)
+            {
+                data = dst;
+            }
+            else
+            {
+                for (var i = 0; i < HandPoseData.HumanFingerCount; ++i)
                 {
-                    for (var i = 0; i < HandPoseData.HumanFingerCount; ++i)
+                    data[i] = new FingerPoseData
                     {
-                        data[i] = new FingerPoseData
-                        {
-                            muscle1 = Mathf.Lerp(src[i].muscle1, dst[i].muscle1, t),
-                            muscle2 = Mathf.Lerp(src[i].muscle2, dst[i].muscle2, t),
-                            muscle3 = Mathf.Lerp(src[i].muscle3, dst[i].muscle3, t),
-                            spread = Mathf.Lerp(src[i].spread, dst[i].spread, t)
-                        };
-                    }
-                    break;
+                        muscle1 = Mathf.Lerp(src[i].muscle1, dst[i].muscle1, t),
+                        muscle2 = Mathf.Lerp(src[i].muscle2, dst[i].muscle2, t),
+                        muscle3 = Mathf.Lerp(src[i].muscle3, dst[i].muscle3, t),
+                        spread = Mathf.Lerp(src[i].spread, dst[i].spread, t)
+                    };
                 }
             }
         }

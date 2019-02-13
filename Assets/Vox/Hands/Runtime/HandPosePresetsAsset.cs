@@ -104,7 +104,11 @@ namespace Vox.Hands
 
         public void RemovePreset(HandPosePreset preset)
         {
+            #if UNITY_2018
             AssetDatabase.RemoveObjectFromAsset(preset.HandPoseImage);
+            #else 
+            DestroyImmediate(preset.HandPoseImage, true);
+            #endif
             presets.Remove(preset);
             EditorUtility.SetDirty(this);
         }

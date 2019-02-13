@@ -36,26 +36,29 @@ namespace Vox.Hands {
 
 		public float Spread
 		{
-			get => m_prop_spread.floatValue;
-			set => m_prop_spread.floatValue = value;
+			get { return m_prop_spread.floatValue; }
+			set { m_prop_spread.floatValue = value; }
 		}
 
 		public float Muscle1
 		{
-			get => m_prop_muscle1.floatValue;
-			set => m_prop_muscle1.floatValue = value;
+			get { return m_prop_muscle1.floatValue; }
+			set { m_prop_muscle1.floatValue = value; }
 		}
 
 		public float Muscle2
 		{
-			get => m_prop_muscle2.floatValue;
-			set => m_prop_muscle2.floatValue = value;
+			get { return m_prop_muscle2.floatValue; }
+			set { m_prop_muscle2.floatValue = value; }
 		}
 
 		public float Muscle3
 		{
-			get => m_prop_muscle3.floatValue;
-			set => m_prop_muscle3.floatValue = value;
+			get
+			{
+				return m_prop_muscle3.floatValue;
+			}
+			set { m_prop_muscle3.floatValue = value; }
 		}
 
 		public SerializedProperty PropSpread => m_prop_spread;
@@ -65,11 +68,13 @@ namespace Vox.Hands {
 
 		public float MuscleAll
 		{
-			get => (m_prop_muscle1.floatValue + m_prop_muscle2.floatValue + m_prop_muscle3.floatValue) / 3.0f;
-			set =>
+			get { return (m_prop_muscle1.floatValue + m_prop_muscle2.floatValue + m_prop_muscle3.floatValue) / 3.0f; }
+			set
+			{
 				m_prop_muscle1.floatValue =
 					m_prop_muscle2.floatValue =
 						m_prop_muscle3.floatValue = value;
+			}
 		}
 
 		public string FingerName => m_fingerName;
@@ -88,7 +93,7 @@ namespace Vox.Hands {
 
 		private float AllSpread
 		{
-			get => m_fingers.Sum(f => f.Spread) / m_fingers.Length;
+			get { return m_fingers.Sum(f => f.Spread) / m_fingers.Length; }
 			set
 			{
 				foreach (var finger in m_fingers)
@@ -100,7 +105,7 @@ namespace Vox.Hands {
 		
 		private float AllFingersMuscle
 		{
-			get => m_fingers.Sum(f => f.MuscleAll) / m_fingers.Length;
+			get { return m_fingers.Sum(f => f.MuscleAll) / m_fingers.Length; }
 			set
 			{
 				foreach (var finger in m_fingers)

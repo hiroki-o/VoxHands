@@ -28,43 +28,75 @@ namespace Vox.Hands {
 
 			public float Spread
 			{
-				get => m_prop_spread.floatValue;
-				set => m_prop_spread.floatValue = value;
+				get { return m_prop_spread.floatValue; }
+				set { m_prop_spread.floatValue = value; }
 			}
 
 			public float Muscle1
 			{
-				get => m_prop_muscle1.floatValue;
-				set => m_prop_muscle1.floatValue = value;
+				get
+				{
+					return m_prop_muscle1.floatValue;
+				}
+				set {m_prop_muscle1.floatValue = value;}
 			}
 
 			public float Muscle2
 			{
-				get => m_prop_muscle2.floatValue;
-				set => m_prop_muscle2.floatValue = value;
+				get
+				{
+					return m_prop_muscle2.floatValue;
+				}
+				set { m_prop_muscle2.floatValue = value; }
 			}
 
 			public float Muscle3
 			{
-				get => m_prop_muscle3.floatValue;
-				set => m_prop_muscle3.floatValue = value;
+				get { return m_prop_muscle3.floatValue; }
+				set { m_prop_muscle3.floatValue = value; }
 			}
 
-			public SerializedProperty PropSpread => m_prop_spread;
-			public SerializedProperty PropMuscle1 => m_prop_muscle1;
-			public SerializedProperty PropMuscle2 => m_prop_muscle2;
-			public SerializedProperty PropMuscle3 => m_prop_muscle3;
+			public SerializedProperty PropSpread
+			{
+				get { return m_prop_spread; }
+			}
+
+			public SerializedProperty PropMuscle1
+			{
+				get
+				{
+					return m_prop_muscle1;
+				}
+			}
+
+			public SerializedProperty PropMuscle2
+			{
+				get { return m_prop_muscle2; }
+			}
+
+			public SerializedProperty PropMuscle3
+			{
+				get { return m_prop_muscle3; }
+			}
 
 			public float MuscleAll
 			{
-				get => (m_prop_muscle1.floatValue + m_prop_muscle2.floatValue + m_prop_muscle3.floatValue) / 3.0f;
-				set =>
+				get
+				{
+					return (m_prop_muscle1.floatValue + m_prop_muscle2.floatValue + m_prop_muscle3.floatValue) / 3.0f;
+				}
+				set
+				{
 					m_prop_muscle1.floatValue =
 						m_prop_muscle2.floatValue =
 							m_prop_muscle3.floatValue = value;
+				}
 			}
 
-			public string FingerName => m_fingerName;
+			public string FingerName
+			{
+				get { return m_fingerName; }
+			}
 		}
 
 		private enum TabMode

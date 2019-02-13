@@ -84,8 +84,9 @@ namespace Vox.Hands {
 		
 		private HandController m_currentTarget;
 		private SerializedProperty m_prop_handType;
+		private SerializedProperty m_prop_preset;
 		private HandPoseDataEditorUtility m_handPoseUtility;
-		
+
 		[SerializeField] private TabMode m_tabMode = TabMode.FingerControls;
 
 		// Animation Export
@@ -105,6 +106,7 @@ namespace Vox.Hands {
 		{
 			m_currentTarget = target as HandController;
 			m_prop_handType = serializedObject.FindProperty("m_handType");
+			m_prop_preset = serializedObject.FindProperty("m_preset");
 			m_handPoseUtility = new HandPoseDataEditorUtility(serializedObject, "m_handPoseData.");
 			m_presetSaveState = PresetSaveState.None;
 		}
@@ -182,6 +184,13 @@ namespace Vox.Hands {
 				ResetEditor();
 			}
 
+			if (m_prop_preset.objectReferenceValue == null)
+			{
+				m_prop_preset.objectReferenceValue = HandPosePresetsAsset.GetDefaultGetPresetsAsset();
+			}
+
+			EditorGUILayout.PropertyField(m_prop_preset);
+			GUILayout.Space(8f);			
 			EditorGUILayout.PropertyField(m_prop_handType);
 
 			if (GUILayout.Button("Focus", GUILayout.Width(50f)))
@@ -194,7 +203,7 @@ namespace Vox.Hands {
 			switch (m_tabMode)
 			{
 				case TabMode.FingerControls:
-					m_handPoseUtility.DrawFingerControls();
+					m_handPoseUtility.DrawFingerControls(m_prop_preset.objectReferenceValue as HandPosePresetsAsset);
 					DrawSavePresetButton();
 					
 					break;
@@ -325,7 +334,9 @@ namespace Vox.Hands {
 					m_presetCaptureIcon = TextureUtility.CreateScaledTexture(m_presetCaptureIcon, scale);
 				}
 				
-				m_handPoseUtility.SaveCurrentToPreset(m_newPresetName, m_presetCaptureIcon);			
+				m_handPoseUtility.SaveCurrentToPreset(
+					m_prop_preset.objectReferenceValue as HandPosePresetsAsset, 
+					m_newPresetName, m_presetCaptureIcon);			
 			}
 		}
 

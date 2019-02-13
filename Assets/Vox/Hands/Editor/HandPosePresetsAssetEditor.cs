@@ -18,7 +18,7 @@ namespace Vox.Hands
             serializedObject.Update();
 
             var asset = target as HandPosePresetsAsset;
-
+            
             HandPosePreset removingPreset = null;
 
             m_presetFilter = EditorGUILayout.TextField("Filter", m_presetFilter);
@@ -35,7 +35,11 @@ namespace Vox.Hands
                 using (new EditorGUILayout.VerticalScope(GUI.skin.box))
                 {
                     GUI.changed = false;
-                    GUILayout.Label(new GUIContent(preset.HandPoseImage));
+                    if (preset.HandPoseImage != null)
+                    {
+                        GUILayout.Label(new GUIContent(preset.HandPoseImage));
+                    }
+                                        
                     preset.Name = EditorGUILayout.DelayedTextField("Name", preset.Name);
                     GUILayout.Space(8f);
                     var pose = preset.HandPoseData;

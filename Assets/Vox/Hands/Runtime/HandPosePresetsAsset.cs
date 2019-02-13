@@ -1,23 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 using System.IO;
-using System.Linq;
-using UnityEditor.Presets;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace Vox.Hands
 {    
     /*
      * Hand Pose Presets.
      */
+    [CreateAssetMenu(fileName = "New HandPosePreset", menuName = "Hand Pose Preset", order = 651)]    
     public class HandPosePresetsAsset : ScriptableObject
     {
         [SerializeField] private List<HandPosePreset> presets = null;
 
         // Properties (Get)
-        public List<HandPosePreset> SavedPresets => presets;
-        
+        public IEnumerable<HandPosePreset> SavedPresets => presets;
+
+        public HandPoseData this[int index] => presets[index].HandPoseData;
+        public HandPoseData this[string name] => presets[presets.FindIndex(p => p.Name == name)].HandPoseData;
+
+#if UNITY_EDITOR
         private static HandPosePresetsAsset s_presetsAsset;
         
         private static string BasePath {
@@ -36,9 +42,9 @@ namespace Vox.Hands
             }
         }
 
-        private const string s_presetAssetFilename = "HandPosePresets.asset";
+        private const string kDEFAULT_PRESET_ASSET_FILENAME = "HandPosePresets.asset";
 
-        public static HandPosePresetsAsset GetPresetsAsset() {
+        public static HandPosePresetsAsset GetDefaultGetPresetsAsset() {
             if(s_presetsAsset == null) {
                 if(!Load()) {
                     // Create vanilla db
@@ -51,19 +57,27 @@ namespace Vox.Hands
                         Directory.CreateDirectory(basePath);
                     }
 
-                    AssetDatabase.CreateAsset(s_presetsAsset, basePath + "/" + s_presetAssetFilename);
+                    AssetDatabase.CreateAsset(s_presetsAsset, basePath + "/" + kDEFAULT_PRESET_ASSET_FILENAME);
                 }
             }
 
             return s_presetsAsset;
         }
-        
+
+        private void OnEnable()
+        {
+            if (presets == null)
+            {
+                presets = new List<HandPosePreset>();
+            }
+        }
+
         private static bool Load() {
 
             var loaded = false;
 
             try {
-                var assetPath = BasePath + "/" + s_presetAssetFilename;
+                var assetPath = BasePath + "/" + kDEFAULT_PRESET_ASSET_FILENAME;
 				
                 if(File.Exists(assetPath)) 
                 {
@@ -94,5 +108,6 @@ namespace Vox.Hands
             presets.Remove(preset);
             EditorUtility.SetDirty(this);
         }
+#endif //UNITY_EDITOR
     }
 }

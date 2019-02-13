@@ -139,7 +139,7 @@ namespace Vox.Hands {
 		}
 		
 
-		public void DrawFingerControls()
+		public void DrawFingerControls(HandPosePresetsAsset presetsAsset)
 		{
 			var allSpreadValue = AllSpread;
 			var newAllSpreadValue = EditorGUILayout.Slider("Spread", allSpreadValue, -1f, 1f);
@@ -183,10 +183,10 @@ namespace Vox.Hands {
 				GUILayout.Space(8f);
 			}
 
-			DrawHandPosePreset();
+			DrawHandPosePreset(presetsAsset);
 		}
 
-		public void DrawFingerControls(Rect position)
+		public void DrawFingerControls(Rect position, HandPosePresetsAsset presetsAsset)
 		{
             var singleFieldRect = new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight);
 			
@@ -232,24 +232,23 @@ namespace Vox.Hands {
 			}
 			singleFieldRect.y += 32f;
 
-			DrawHandPosePreset(new Rect(singleFieldRect.x, singleFieldRect.y, position.width, position.height - (singleFieldRect.y - position.y)));
-		}		
+			DrawHandPosePreset(new Rect(singleFieldRect.x, singleFieldRect.y, position.width, position.height - (singleFieldRect.y - position.y)), 
+				presetsAsset);
+		}
 		
-		private void DrawHandPosePreset()
+		private void DrawHandPosePreset(HandPosePresetsAsset presetsAsset)
 		{
 			m_presetFoldout = EditorGUILayout.Foldout(m_presetFoldout, "Presets");
 			if (m_presetFoldout)
 			{
 				m_presetFilter = EditorGUILayout.TextField("Filter", m_presetFilter);
 
-				var presetAsset = HandPosePresetsAsset.GetPresetsAsset();
-
 				m_presetScroll = GUILayout.BeginScrollView(m_presetScroll, GUI.skin.box, GUILayout.Height(174f));
 				using (new EditorGUILayout.HorizontalScope())
 				{
 					var presets = string.IsNullOrEmpty(m_presetFilter)
-						? presetAsset.SavedPresets
-						: presetAsset.SavedPresets.Where(p => p.Name.ToLower().Contains(m_presetFilter.ToLower()));
+						? presetsAsset.SavedPresets
+						: presetsAsset.SavedPresets.Where(p => p.Name.ToLower().Contains(m_presetFilter.ToLower()));
 					foreach (var preset in presets)
 					{
 						if (GUILayout.Button(new GUIContent(preset.HandPoseImage, preset.Name), GUILayout.Width(150f), GUILayout.Height(150f)))
@@ -263,7 +262,7 @@ namespace Vox.Hands {
 			}
 		}
 		
-		private void DrawHandPosePreset(Rect position)
+		private void DrawHandPosePreset(Rect position, HandPosePresetsAsset presetsAsset)
 		{
 			var singleFieldRect = new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight);
 			GUI.Label(singleFieldRect,"Presets", "BoldLabel");
@@ -273,10 +272,9 @@ namespace Vox.Hands {
 
 			singleFieldRect.y += 12f;
 
-			var presetAsset = HandPosePresetsAsset.GetPresetsAsset();
 			var presets = string.IsNullOrEmpty(m_presetFilter)
-				? presetAsset.SavedPresets
-				: presetAsset.SavedPresets.Where(p => p.Name.ToLower().Contains(m_presetFilter.ToLower()));
+				? presetsAsset.SavedPresets
+				: presetsAsset.SavedPresets.Where(p => p.Name.ToLower().Contains(m_presetFilter.ToLower()));
 			
 			var posRect = new Rect(position.x, singleFieldRect.y, position.width, 174f);
 			var viewRect = new Rect(0f, 0f, presets.Count() * 154f, 150f);
@@ -310,9 +308,8 @@ namespace Vox.Hands {
 			}
 		}
 
-		public void SaveCurrentToPreset(string name, Texture2D icon)
+		public void SaveCurrentToPreset(HandPosePresetsAsset presetsAsset, string name, Texture2D icon)
 		{
-			var presetAsset = HandPosePresetsAsset.GetPresetsAsset();
 			var pose = new HandPoseData
 			{
 				thumb =
@@ -353,7 +350,7 @@ namespace Vox.Hands {
 			};
 
 			var newPreset = new HandPosePreset(name, ref pose, icon);			
-			presetAsset.AddNewPreset(newPreset);
+			presetsAsset.AddNewPreset(newPreset);
 		}
 	}
 }

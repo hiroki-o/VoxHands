@@ -5,6 +5,12 @@ A Hand/Finger Controller plugin for Unity.
 
 VoxHands enables to control fingers with humanoid muscle rigs. It also comes with preset, and let you export finger gestures in animation clip, and also support Timeline.
 
+## Supported Unity Versions
+- 2018.3+ (master branch)
+- 2017.4 ([2017.4 branch](https://github.com/hiroki-o/VoxHands/tree/2017.4))
+
+NOTE: 2017.4 branch is made for 2017.4.15f1(for VRChat compatibility)
+
 ## Video
 - [YouTube Video](https://www.youtube.com/watch?v=4Sxhn_YQOFw&feature=youtu.be)
 

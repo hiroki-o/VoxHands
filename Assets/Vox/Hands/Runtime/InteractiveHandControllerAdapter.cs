@@ -43,10 +43,20 @@ public class InteractiveHandControllerAdapter : MonoBehaviour
         {
             foreach (var input in m_inputs)
             {
-                if(input.hand == HandType.LeftHand) 
-                    m_leftHand?.SetHandPose(input.presetIndex, Input.GetAxis(input.inputName));
-                else 
-                    m_rightHand?.SetHandPose(input.presetIndex, Input.GetAxis(input.inputName));
+                if (input.hand == HandType.LeftHand)
+                {
+                    if (m_leftHand != null)
+                    {
+                        m_leftHand.SetHandPose(input.presetIndex, Input.GetAxis(input.inputName));
+                    }
+                }
+                else
+                {
+                    if (m_rightHand != null)
+                    {
+                        m_rightHand.SetHandPose(input.presetIndex, Input.GetAxis(input.inputName));                        
+                    }
+                }
             }
         }
     }

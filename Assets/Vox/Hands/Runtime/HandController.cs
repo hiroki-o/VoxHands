@@ -160,7 +160,10 @@ namespace Vox.Hands
 
         private void LateUpdate()
         {
-            m_runtimeControl?.UpdateHandPose(ref m_handPoseData);
+            if (m_runtimeControl != null)
+            {
+                m_runtimeControl.UpdateHandPose(ref m_handPoseData);                
+            }
         }
     }
 }

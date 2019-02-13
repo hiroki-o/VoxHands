@@ -61,10 +61,37 @@ namespace Vox.Hands {
 			set { m_prop_muscle3.floatValue = value; }
 		}
 
-		public SerializedProperty PropSpread => m_prop_spread;
-		public SerializedProperty PropMuscle1 => m_prop_muscle1;
-		public SerializedProperty PropMuscle2 => m_prop_muscle2;
-		public SerializedProperty PropMuscle3 => m_prop_muscle3;
+		public SerializedProperty PropSpread
+		{
+			get
+			{
+				return m_prop_spread;
+			}
+		}
+
+		public SerializedProperty PropMuscle1
+		{
+			get
+			{
+				return m_prop_muscle1;
+			}
+		}
+
+		public SerializedProperty PropMuscle2
+		{
+			get
+			{
+				return m_prop_muscle2;
+			}
+		}
+
+		public SerializedProperty PropMuscle3
+		{
+			get
+			{
+				return m_prop_muscle3;
+			}
+		}
 
 		public float MuscleAll
 		{
@@ -77,7 +104,13 @@ namespace Vox.Hands {
 			}
 		}
 
-		public string FingerName => m_fingerName;
+		public string FingerName
+		{
+			get
+			{
+				return m_fingerName;
+			}
+		}
 	}
 	
 	[Serializable]
@@ -89,7 +122,13 @@ namespace Vox.Hands {
 		private string m_presetFilter;
 		private Vector2 m_presetScroll;
 
-		public FingerProperties[] Fingers => m_fingers;
+		public FingerProperties[] Fingers
+		{
+			get
+			{
+				return m_fingers;
+			}
+		}
 
 		private float AllSpread
 		{
@@ -165,7 +204,7 @@ namespace Vox.Hands {
 			for (var i = 0; i < m_fingers.Length; ++i)
 			{
 				var finger = m_fingers[i];
-				m_foldouts[i] = EditorGUILayout.Foldout(m_foldouts[i], $"{finger.FingerName} finger");
+				m_foldouts[i] = EditorGUILayout.Foldout(m_foldouts[i], string.Format("{0} finger", finger.FingerName));
 				if (m_foldouts[i]) 
 				{
 					using (new EditorGUILayout.VerticalScope(GUI.skin.box)) 

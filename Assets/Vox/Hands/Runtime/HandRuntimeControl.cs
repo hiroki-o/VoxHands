@@ -110,12 +110,10 @@ namespace Vox.Hands
     {
         private readonly int[] m_handBoneIndexMap;
         private readonly HumanPoseHandler m_poseHandler;
-        private readonly GameObject m_rootObject;
         private HumanPose m_humanPose;
 
         public HandRuntimeControl(GameObject rootObject, Avatar avatar, HandType handType)
         {
-            m_rootObject = rootObject;
             m_poseHandler = new HumanPoseHandler(avatar, rootObject.transform);
             m_handBoneIndexMap = new int[20];
 

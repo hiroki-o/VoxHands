@@ -10,7 +10,13 @@ namespace Vox.Hands
     {
         public HandControllerPlayableBehaviour template = new HandControllerPlayableBehaviour();
 
-        public ClipCaps clipCaps => ClipCaps.All;
+        public ClipCaps clipCaps
+        {
+            get
+            {
+                return ClipCaps.All;
+            }
+        } 
 
         public override Playable CreatePlayable(PlayableGraph graph, GameObject owner)
         {

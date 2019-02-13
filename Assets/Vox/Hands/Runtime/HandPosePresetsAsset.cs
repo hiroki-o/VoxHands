@@ -18,10 +18,29 @@ namespace Vox.Hands
         [SerializeField] private List<HandPosePreset> presets = null;
 
         // Properties (Get)
-        public IEnumerable<HandPosePreset> SavedPresets => presets;
+        public IEnumerable<HandPosePreset> SavedPresets
+        {
+            get
+            {
+                return presets;
+            }
+        }
 
-        public HandPoseData this[int index] => presets[index].HandPoseData;
-        public HandPoseData this[string name] => presets[presets.FindIndex(p => p.Name == name)].HandPoseData;
+        public HandPoseData this[int index]
+        {
+            get
+            {
+                return presets[index].HandPoseData;
+            }
+        }
+
+        public HandPoseData this[string name]
+        {
+            get
+            {
+                return presets[presets.FindIndex(p => p.Name == name)].HandPoseData;
+            }
+        }
 
 #if UNITY_EDITOR
         private static HandPosePresetsAsset s_presetsAsset;

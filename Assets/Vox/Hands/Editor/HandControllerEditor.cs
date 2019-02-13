@@ -439,10 +439,10 @@ namespace Vox.Hands {
 					muscle3.AddKey(newKey);
 				}
 				
-				newAnimation.SetCurve("", typeof(Animator), $"{hand}.{finger.FingerName}.Spread", spread);
-				newAnimation.SetCurve("", typeof(Animator), $"{hand}.{finger.FingerName}.1 Stretched", muscle1);
-				newAnimation.SetCurve("", typeof(Animator), $"{hand}.{finger.FingerName}.2 Stretched", muscle2);
-				newAnimation.SetCurve("", typeof(Animator), $"{hand}.{finger.FingerName}.3 Stretched", muscle3);
+				newAnimation.SetCurve("", typeof(Animator), string.Format("{0}.{1}.Spread", hand, finger.FingerName), spread);
+				newAnimation.SetCurve("", typeof(Animator), string.Format("{0}.{1}.1 Stretched", hand, finger.FingerName), muscle1);
+				newAnimation.SetCurve("", typeof(Animator), string.Format("{0}.{1}.2 Stretched", hand, finger.FingerName), muscle2);
+				newAnimation.SetCurve("", typeof(Animator), string.Format("{0}.{1}.3 Stretched", hand, finger.FingerName), muscle3);
 			}
 			
 			AssetDatabase.CreateAsset(newAnimation, savePath);

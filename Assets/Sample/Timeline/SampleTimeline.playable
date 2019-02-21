@@ -20,7 +20,7 @@ MonoBehaviour:
   m_EditorSettings:
     m_Framerate: 60
   m_DurationMode: 0
---- !u!74 &74922387644013268
+--- !u!74 &74516019371554720
 AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -40,135 +40,661 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
+        time: 0.21666667
+        value: 0.251
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -0.481
+        inSlope: -0.28648853
+        outSlope: -0.28648853
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.5833335
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.thumb.spread
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: -0.271
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.2166667
+        time: 8.216666
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.thumb.muscle2
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.007
+        inSlope: 0.20033388
+        outSlope: 0.20033388
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.thumb.muscle3
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: -0.469
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.5833335
+        value: 0.06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: -0.078
+        inSlope: -0.07811321
+        outSlope: -0.07811321
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.index.spread
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.927
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.5833335
+        value: 0.861
+        inSlope: 0.053740457
+        outSlope: 0.053740457
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.949
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.index.muscle1
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.619
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.5833335
+        value: 0.861
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.092
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.index.muscle2
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.824
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.5833335
+        value: 0.861
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.183
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.index.muscle3
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: -0.509
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.728
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.middle.spread
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.711
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.79
+        inSlope: 0.016026694
+        outSlope: 0.016026694
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.83
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.middle.muscle1
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.455
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.155
+        inSlope: 0.19011685
+        outSlope: 0.19011685
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.898
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.middle.muscle2
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.495
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.195
+        inSlope: 0.17819698
+        outSlope: 0.17819698
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.779
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.middle.muscle3
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: -0.509
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.ring.spread
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.643
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.79
+        inSlope: 0.01843072
+        outSlope: 0.01843072
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.ring.muscle1
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.183
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.206
+        inSlope: 0.1839065
+        outSlope: 0.1839065
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.ring.muscle2
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.739
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.387
+        inSlope: 0.17989983
+        outSlope: 0.17989983
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.ring.muscle3
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: -0.509
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.little.spread
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.591
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.79
+        inSlope: 0.01843072
+        outSlope: 0.01843072
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.little.muscle1
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.478
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.739
+        inSlope: 0.038864788
+        outSlope: 0.038864788
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.little.muscle2
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.643
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.075
+        inSlope: 0.18390651
+        outSlope: 0.18390651
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.little.muscle3
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 2.7166667
         value: -0.481
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.9
+        time: 4.5833335
         value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 6.883333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 7.25
-        value: -0.481
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.166667
-        value: -0.481
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.833333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 12.7
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -0.481
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -0.481
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -0.481
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -0.481
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -0.481
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -0.481
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -0.481
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.thumb.spread
+    attribute: leftHandPose.thumb.spread
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -176,39 +702,27 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.387
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.387
-        inSlope: -0.74174505
-        outSlope: -0.74174505
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.2166667
-        value: -1
+        time: 8.216666
+        value: 0.007
+        inSlope: 0.27272728
+        outSlope: 0.27272728
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 10.05
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.thumb.muscle1
+    attribute: leftHandPose.thumb.muscle3
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -216,63 +730,39 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.387
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.387
-        inSlope: -0.74174505
-        outSlope: -0.74174505
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.2166667
-        value: -1
+        time: 4.5833335
+        value: 0.861
+        inSlope: 0.063999996
+        outSlope: 0.063999996
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.949
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 25.066668
-        value: -1
+        time: 10.05
+        value: -0.311
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 26
-        value: 0.536
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 0.536
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.thumb.muscle2
+    attribute: leftHandPose.index.muscle1
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -280,153 +770,39 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.387
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.387
-        inSlope: -0.74174505
-        outSlope: -0.74174505
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.2166667
-        value: -1
+        time: 4.5833335
+        value: 0.861
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.9
-        value: 0.135
+        time: 8.216666
+        value: 0.092
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 6.883333
-        value: 0.135
-        inSlope: 0
-        outSlope: 0
+        time: 10.05
+        value: 0.321
+        inSlope: 0.29176468
+        outSlope: 0.29176468
         tangentMode: 136
       - serializedVersion: 2
-        time: 7.25
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.833333
-        value: 0.135
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 12.7
-        value: 0.135
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 0.135
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 0.135
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 0.135
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 0.135
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.thumb.muscle3
+    attribute: leftHandPose.index.muscle2
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -434,129 +810,39 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.9
-        value: 0.083
+        time: 4.5833335
+        value: 0.861
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 6.883333
-        value: 0.083
+        time: 8.216666
+        value: 0.183
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 7.25
-        value: -1
-        inSlope: 0
-        outSlope: 0
+        time: 10.05
+        value: 0.332
+        inSlope: 0.23372544
+        outSlope: 0.23372544
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.833333
-        value: 0.083
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 12.7
-        value: 0.083
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 0.083
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 0.083
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 0.083
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 0.083
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 0.083
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 0.083
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.index.spread
+    attribute: leftHandPose.index.muscle3
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -564,153 +850,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.216
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.216
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.9
-        value: 0.957
+        time: 8.216666
+        value: 0.79
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 6.883333
-        value: 0.957
+        time: 10.05
+        value: -0.662
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 7.25
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.833333
-        value: 0.957
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 12.7
-        value: 0.957
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 0.957
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 0.957
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 0.957
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 0.957
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 0.957
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 0.957
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.83
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.index.muscle1
+    attribute: leftHandPose.middle.muscle1
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -718,153 +884,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.216
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.216
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.9
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
+        time: 8.216666
+        value: 0.155
+        inSlope: 0.21340908
+        outSlope: 0.21340908
         tangentMode: 136
       - serializedVersion: 2
-        time: 6.883333
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
+        time: 10.05
+        value: 0.565
+        inSlope: 0.29137254
+        outSlope: 0.29137254
         tangentMode: 136
       - serializedVersion: 2
-        time: 7.25
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.833333
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 12.7
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.898
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.index.muscle2
+    attribute: leftHandPose.middle.muscle2
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -872,153 +918,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.216
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.216
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.9
-        value: 0.861
+        time: 8.216666
+        value: 0.195
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 6.883333
-        value: 0.861
+        time: 10.05
+        value: -0.201
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 7.25
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.833333
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 12.7
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.779
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.index.muscle3
+    attribute: leftHandPose.middle.muscle3
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -1026,111 +952,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.166667
-        value: -1
+        time: 8.216666
+        value: 0.79
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.833333
-        value: 0.106
+        time: 10.05
+        value: -0.678
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 12.7
-        value: 0.106
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 0.106
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 0.106
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 0.106
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 0.106
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 0.106
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 0.106
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.middle.spread
+    attribute: leftHandPose.ring.muscle1
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -1138,135 +986,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
+        time: 8.216666
+        value: 0.206
+        inSlope: 0.04309092
+        outSlope: 0.04309092
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.833333
-        value: 1
-        inSlope: 0
-        outSlope: 0
+        time: 10.05
+        value: 0.285
+        inSlope: 0.12392155
+        outSlope: 0.12392155
         tangentMode: 136
       - serializedVersion: 2
-        time: 12.7
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.middle.muscle1
+    attribute: leftHandPose.ring.muscle2
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -1274,135 +1020,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.166667
-        value: -1
+        time: 8.216666
+        value: 0.387
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.833333
-        value: 1
+        time: 10.05
+        value: 0.2
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 12.7
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.middle.muscle2
+    attribute: leftHandPose.ring.muscle3
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -1410,135 +1054,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.166667
-        value: -1
+        time: 8.216666
+        value: 0.79
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.833333
-        value: 1
+        time: 10.05
+        value: -0.447
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 12.7
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.middle.muscle3
+    attribute: leftHandPose.little.muscle1
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -1546,87 +1088,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 15.666667
-        value: -1
+        time: 8.216666
+        value: 0.739
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 16.1
-        value: 0.77
+        time: 10.05
+        value: -0.173
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 18.016666
-        value: 0.77
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 0.77
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 0.77
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 0.77
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 0.77
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.ring.spread
+    attribute: leftHandPose.little.muscle2
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -1634,111 +1122,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: -0.24322155
-        outSlope: -0.24322155
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.2166667
-        value: -1
+        time: 8.216666
+        value: 0.075
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 15.666667
-        value: -1
+        time: 10.05
+        value: 0.071
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 16.1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.ring.muscle1
+    attribute: leftHandPose.little.muscle3
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -1746,103 +1156,25 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
+        time: 4.5833335
+        value: 0.06
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2
-        value: 0.842
+        time: 8.216666
+        value: -0.078
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: -0.24322155
-        outSlope: -0.24322155
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: -1
+        time: 10.05
+        value: -0.012
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.2166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
+        time: 10.766666
         value: -1
         inSlope: 0
         outSlope: 0
@@ -1850,7 +1182,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.ring.muscle2
+    attribute: leftHandPose.index.spread
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -1858,103 +1190,13 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
+        time: 8.216666
+        value: -0.472
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: -0.24322155
-        outSlope: -0.24322155
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
+        time: 10.05
         value: -1
         inSlope: 0
         outSlope: 0
@@ -1962,7 +1204,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.ring.muscle3
+    attribute: leftHandPose.thumb.muscle1
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -1970,55 +1212,19 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
+        time: 8.216666
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
+        time: 10.05
+        value: -0.691
+        inSlope: -0.48470587
+        outSlope: -0.48470587
         tangentMode: 136
       - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
+        time: 10.766666
         value: -1
         inSlope: 0
         outSlope: 0
@@ -2026,7 +1232,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.little.spread
+    attribute: leftHandPose.thumb.muscle2
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -2034,79 +1240,19 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
+        time: 8.216666
+        value: 0.728
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: -0.24322155
-        outSlope: -0.24322155
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
+        time: 10.05
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
+        time: 10.766666
         value: -1
         inSlope: 0
         outSlope: 0
@@ -2114,7 +1260,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.little.muscle1
+    attribute: leftHandPose.middle.spread
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -2122,79 +1268,13 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
+        time: 8.216666
+        value: -0.472
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: -0.24322155
-        outSlope: -0.24322155
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
+        time: 11.65
         value: -1
         inSlope: 0
         outSlope: 0
@@ -2202,95 +1282,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.little.muscle2
-    path: 
-    classID: 114
-    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: -0.24322155
-        outSlope: -0.24322155
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: handPose.little.muscle3
+    attribute: rightHandPose.thumb.muscle1
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -2308,7 +1300,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 28.416666
+    m_StopTime: 11.65
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -2328,135 +1320,661 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
+        time: 0.21666667
+        value: 0.251
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -0.481
+        inSlope: -0.28648853
+        outSlope: -0.28648853
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.5833335
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.thumb.spread
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: -0.271
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.2166667
+        time: 8.216666
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.thumb.muscle2
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.007
+        inSlope: 0.20033388
+        outSlope: 0.20033388
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.thumb.muscle3
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: -0.469
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.5833335
+        value: 0.06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: -0.078
+        inSlope: -0.07811321
+        outSlope: -0.07811321
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.index.spread
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.927
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.5833335
+        value: 0.861
+        inSlope: 0.053740457
+        outSlope: 0.053740457
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.949
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.index.muscle1
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.619
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.5833335
+        value: 0.861
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.092
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.index.muscle2
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.824
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.5833335
+        value: 0.861
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.183
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.index.muscle3
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: -0.509
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.728
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.middle.spread
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.711
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.79
+        inSlope: 0.016026694
+        outSlope: 0.016026694
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.83
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.middle.muscle1
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.455
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.155
+        inSlope: 0.19011685
+        outSlope: 0.19011685
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.898
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.middle.muscle2
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.495
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.195
+        inSlope: 0.17819698
+        outSlope: 0.17819698
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.779
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.middle.muscle3
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: -0.509
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.ring.spread
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.643
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.79
+        inSlope: 0.01843072
+        outSlope: 0.01843072
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.ring.muscle1
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.183
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.206
+        inSlope: 0.1839065
+        outSlope: 0.1839065
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.ring.muscle2
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.739
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.387
+        inSlope: 0.17989983
+        outSlope: 0.17989983
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.ring.muscle3
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: -0.509
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.little.spread
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.591
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.79
+        inSlope: 0.01843072
+        outSlope: 0.01843072
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.little.muscle1
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.478
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.739
+        inSlope: 0.038864788
+        outSlope: 0.038864788
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.little.muscle2
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.21666667
+        value: 0.643
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.6666666
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.075
+        inSlope: 0.18390651
+        outSlope: 0.18390651
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 11.65
+        value: 0.836
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: rightHandPose.little.muscle3
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 2.7166667
         value: -0.481
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.9
+        time: 4.5833335
         value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 6.883333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 7.25
-        value: -0.481
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.166667
-        value: -0.481
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.833333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 12.7
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -0.481
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -0.481
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -0.481
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -0.481
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -0.481
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -0.481
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -0.481
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.thumb.spread
+    attribute: leftHandPose.thumb.spread
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -2464,39 +1982,27 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.387
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.387
-        inSlope: -0.74174505
-        outSlope: -0.74174505
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.2166667
-        value: -1
+        time: 8.216666
+        value: 0.007
+        inSlope: 0.27272728
+        outSlope: 0.27272728
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 10.05
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.thumb.muscle1
+    attribute: leftHandPose.thumb.muscle3
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -2504,63 +2010,39 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.387
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.387
-        inSlope: -0.74174505
-        outSlope: -0.74174505
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.2166667
-        value: -1
+        time: 4.5833335
+        value: 0.861
+        inSlope: 0.063999996
+        outSlope: 0.063999996
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.216666
+        value: 0.949
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 25.066668
-        value: -1
+        time: 10.05
+        value: -0.311
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 26
-        value: 0.536
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 0.536
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.thumb.muscle2
+    attribute: leftHandPose.index.muscle1
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -2568,153 +2050,39 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.387
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.387
-        inSlope: -0.74174505
-        outSlope: -0.74174505
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.2166667
-        value: -1
+        time: 4.5833335
+        value: 0.861
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.9
-        value: 0.135
+        time: 8.216666
+        value: 0.092
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 6.883333
-        value: 0.135
-        inSlope: 0
-        outSlope: 0
+        time: 10.05
+        value: 0.321
+        inSlope: 0.29176468
+        outSlope: 0.29176468
         tangentMode: 136
       - serializedVersion: 2
-        time: 7.25
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.833333
-        value: 0.135
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 12.7
-        value: 0.135
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 0.135
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 0.135
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 0.135
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 0.135
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.thumb.muscle3
+    attribute: leftHandPose.index.muscle2
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -2722,129 +2090,39 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.9
-        value: 0.083
+        time: 4.5833335
+        value: 0.861
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 6.883333
-        value: 0.083
+        time: 8.216666
+        value: 0.183
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 7.25
-        value: -1
-        inSlope: 0
-        outSlope: 0
+        time: 10.05
+        value: 0.332
+        inSlope: 0.23372544
+        outSlope: 0.23372544
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.833333
-        value: 0.083
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 12.7
-        value: 0.083
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 0.083
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 0.083
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 0.083
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 0.083
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 0.083
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 0.083
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.index.spread
+    attribute: leftHandPose.index.muscle3
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -2852,153 +2130,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.216
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.216
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.9
-        value: 0.957
+        time: 8.216666
+        value: 0.79
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 6.883333
-        value: 0.957
+        time: 10.05
+        value: -0.662
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 7.25
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.833333
-        value: 0.957
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 12.7
-        value: 0.957
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 0.957
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 0.957
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 0.957
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 0.957
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 0.957
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 0.957
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.83
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.index.muscle1
+    attribute: leftHandPose.middle.muscle1
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -3006,153 +2164,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.216
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.216
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.9
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
+        time: 8.216666
+        value: 0.155
+        inSlope: 0.21340908
+        outSlope: 0.21340908
         tangentMode: 136
       - serializedVersion: 2
-        time: 6.883333
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
+        time: 10.05
+        value: 0.565
+        inSlope: 0.29137254
+        outSlope: 0.29137254
         tangentMode: 136
       - serializedVersion: 2
-        time: 7.25
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.833333
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 12.7
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.898
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.index.muscle2
+    attribute: leftHandPose.middle.muscle2
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -3160,153 +2198,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.216
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.216
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.9
-        value: 0.861
+        time: 8.216666
+        value: 0.195
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 6.883333
-        value: 0.861
+        time: 10.05
+        value: -0.201
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 7.25
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 10.833333
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 12.7
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 0.861
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.779
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.index.muscle3
+    attribute: leftHandPose.middle.muscle3
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -3314,111 +2232,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.166667
-        value: -1
+        time: 8.216666
+        value: 0.79
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.833333
-        value: 0.106
+        time: 10.05
+        value: -0.678
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 12.7
-        value: 0.106
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 0.106
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 0.106
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 0.106
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 0.106
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 0.106
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 0.106
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.middle.spread
+    attribute: leftHandPose.ring.muscle1
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -3426,135 +2266,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
+        time: 8.216666
+        value: 0.206
+        inSlope: 0.04309092
+        outSlope: 0.04309092
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.833333
-        value: 1
-        inSlope: 0
-        outSlope: 0
+        time: 10.05
+        value: 0.285
+        inSlope: 0.12392155
+        outSlope: 0.12392155
         tangentMode: 136
       - serializedVersion: 2
-        time: 12.7
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.middle.muscle1
+    attribute: leftHandPose.ring.muscle2
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -3562,135 +2300,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.166667
-        value: -1
+        time: 8.216666
+        value: 0.387
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.833333
-        value: 1
+        time: 10.05
+        value: 0.2
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 12.7
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.middle.muscle2
+    attribute: leftHandPose.ring.muscle3
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -3698,135 +2334,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.166667
-        value: -1
+        time: 8.216666
+        value: 0.79
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.833333
-        value: 1
+        time: 10.05
+        value: -0.447
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 12.7
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 13.2
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.middle.muscle3
+    attribute: leftHandPose.little.muscle1
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -3834,87 +2368,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 15.666667
-        value: -1
+        time: 8.216666
+        value: 0.739
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 16.1
-        value: 0.77
+        time: 10.05
+        value: -0.173
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 18.016666
-        value: 0.77
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 0.77
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 0.77
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 0.77
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 0.77
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.ring.spread
+    attribute: leftHandPose.little.muscle2
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -3922,111 +2402,33 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: -0.24322155
-        outSlope: -0.24322155
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
+        time: 2.7166667
         value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.2166667
-        value: -1
+        time: 8.216666
+        value: 0.075
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 15.666667
-        value: -1
+        time: 10.05
+        value: 0.071
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 16.1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
+        time: 10.766666
+        value: 0.836
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.ring.muscle1
+    attribute: leftHandPose.little.muscle3
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -4034,103 +2436,25 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
+        time: 4.5833335
+        value: 0.06
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2
-        value: 0.842
+        time: 8.216666
+        value: -0.078
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: -0.24322155
-        outSlope: -0.24322155
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: -1
+        time: 10.05
+        value: -0.012
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.2166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
+        time: 10.766666
         value: -1
         inSlope: 0
         outSlope: 0
@@ -4138,7 +2462,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.ring.muscle2
+    attribute: leftHandPose.index.spread
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -4146,103 +2470,13 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
+        time: 8.216666
+        value: -0.472
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: -0.24322155
-        outSlope: -0.24322155
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 15.666667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 16.1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.016666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 18.633333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
+        time: 10.05
         value: -1
         inSlope: 0
         outSlope: 0
@@ -4250,7 +2484,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.ring.muscle3
+    attribute: leftHandPose.thumb.muscle1
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -4258,55 +2492,19 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
+        time: 8.216666
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
+        time: 10.05
+        value: -0.691
+        inSlope: -0.48470587
+        outSlope: -0.48470587
         tangentMode: 136
       - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
+        time: 10.766666
         value: -1
         inSlope: 0
         outSlope: 0
@@ -4314,7 +2512,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.little.spread
+    attribute: leftHandPose.thumb.muscle2
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -4322,79 +2520,19 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
+        time: 8.216666
+        value: 0.728
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: -0.24322155
-        outSlope: -0.24322155
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
+        time: 10.05
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
+        time: 10.766666
         value: -1
         inSlope: 0
         outSlope: 0
@@ -4402,7 +2540,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.little.muscle1
+    attribute: leftHandPose.middle.spread
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -4410,79 +2548,13 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
+        time: 8.216666
+        value: -0.472
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: -0.24322155
-        outSlope: -0.24322155
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
+        time: 11.65
         value: -1
         inSlope: 0
         outSlope: 0
@@ -4490,95 +2562,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: handPose.little.muscle2
-    path: 
-    classID: 114
-    script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0.38333333
-        value: -0.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2
-        value: 0.842
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.55
-        value: -0.849
-        inSlope: -0.24322155
-        outSlope: -0.24322155
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.483333
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 5.2166667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 20.433332
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 21.483334
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 22.85
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 23.216667
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 25.066668
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 26
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 27.916666
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 28.416666
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: handPose.little.muscle3
+    attribute: rightHandPose.thumb.muscle1
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
@@ -4587,45 +2571,6 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
   m_Events: []
---- !u!114 &114060623357505546
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
-  m_Name: HandControllerPlayableClip
-  m_EditorClassIdentifier: 
-  template:
-    presets: {fileID: 11400000, guid: 067d8a51cdded4e4c96875f649beee12, type: 2}
-    handPose:
-      thumb:
-        spread: -1
-        muscle1: -0.387
-        muscle2: -0.387
-        muscle3: -0.387
-      index:
-        spread: -1
-        muscle1: -0.216
-        muscle2: -0.216
-        muscle3: -0.216
-      middle:
-        spread: -1
-        muscle1: -0.849
-        muscle2: -0.849
-        muscle3: -0.849
-      ring:
-        spread: -1
-        muscle1: -0.849
-        muscle2: -0.849
-        muscle3: -0.849
-      little:
-        spread: -1
-        muscle1: -0.849
-        muscle2: -0.849
-        muscle3: -0.849
 --- !u!114 &114065917833448984
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4639,32 +2584,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     presets: {fileID: 11400000, guid: 067d8a51cdded4e4c96875f649beee12, type: 2}
-    handPose:
+    leftHandPose:
       thumb:
-        spread: -1
-        muscle1: -1
-        muscle2: -1
-        muscle3: -1
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       index:
-        spread: -1
-        muscle1: -1
-        muscle2: -1
-        muscle3: -1
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       middle:
-        spread: -1
-        muscle1: -1
-        muscle2: -1
-        muscle3: -1
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       ring:
-        spread: -1
-        muscle1: -1
-        muscle2: -1
-        muscle3: -1
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       little:
-        spread: -1
-        muscle1: -1
-        muscle2: -1
-        muscle3: -1
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+    rightHandPose:
+      thumb:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      index:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      middle:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      ring:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      little:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
 --- !u!114 &114072138943417902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4678,32 +2649,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     presets: {fileID: 11400000, guid: 067d8a51cdded4e4c96875f649beee12, type: 2}
-    handPose:
+    leftHandPose:
       thumb:
-        spread: -1
-        muscle1: -1
-        muscle2: -1
-        muscle3: -1
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       index:
-        spread: 0.06
-        muscle1: 0.861
-        muscle2: 0.861
-        muscle3: 0.861
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       middle:
-        spread: -1
-        muscle1: -1
-        muscle2: -1
-        muscle3: -1
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       ring:
-        spread: -1
-        muscle1: -1
-        muscle2: -1
-        muscle3: -1
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       little:
-        spread: -1
-        muscle1: -1
-        muscle2: -1
-        muscle3: -1
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+    rightHandPose:
+      thumb:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      index:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      middle:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      ring:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      little:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
 --- !u!114 &114112210845816132
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4716,11 +2713,76 @@ MonoBehaviour:
   m_Name: AnimationPlayableAsset
   m_EditorClassIdentifier: 
   m_Clip: {fileID: 7400000, guid: dffa50cfe77e0434bbfa71245b3dd529, type: 3}
-  m_Position: {x: 0, y: 0.84135866, z: 0}
+  m_Position: {x: 0, y: 0.45, z: 0}
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
   m_RemoveStartOffset: 1
+--- !u!114 &114129599827752412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d00e7129eff4f8c9ab73d62638ac34, type: 3}
+  m_Name: HandControllerPlayableClip
+  m_EditorClassIdentifier: 
+  template:
+    presets: {fileID: 11400000, guid: 067d8a51cdded4e4c96875f649beee12, type: 2}
+    leftHandPose:
+      thumb:
+        spread: -1
+        muscle1: -0.472
+        muscle2: 1
+        muscle3: -0.6272409
+      index:
+        spread: 0.027276684
+        muscle1: 0.9162495
+        muscle2: 0.6786505
+        muscle3: 0.7002289
+      middle:
+        spread: 0.728
+        muscle1: 0.024773836
+        muscle2: -0.4981959
+        muscle3: -0.3158633
+      ring:
+        spread: -1
+        muscle1: 0.024773836
+        muscle2: -0.3417579
+        muscle3: -0.2059434
+      little:
+        spread: -1
+        muscle1: 0.024773836
+        muscle2: -0.004423797
+        muscle3: -0.38456315
+    rightHandPose:
+      thumb:
+        spread: -1
+        muscle1: -0.472
+        muscle2: 0.35553288
+        muscle3: -0.50926065
+      index:
+        spread: 0.04670989
+        muscle1: 0.9107378
+        muscle2: 0.6786505
+        muscle3: 0.7002289
+      middle:
+        spread: 0.17118049
+        muscle1: 0.19786024
+        muscle2: -0.39917082
+        muscle3: -0.36064988
+      ring:
+        spread: -1
+        muscle1: 0.1955589
+        muscle2: -0.35865986
+        muscle3: -0.23214877
+      little:
+        spread: -1
+        muscle1: 0.1955589
+        muscle2: 0.14143217
+        muscle3: -0.44744724
 --- !u!114 &114133064999163748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4734,32 +2796,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     presets: {fileID: 11400000, guid: 067d8a51cdded4e4c96875f649beee12, type: 2}
-    handPose:
+    leftHandPose:
       thumb:
-        spread: -0.34
-        muscle1: 0.696
-        muscle2: 0.696
-        muscle3: 0.696
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       index:
-        spread: -0.34
-        muscle1: 0.696
-        muscle2: 0.696
-        muscle3: 0.696
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       middle:
-        spread: -0.34
-        muscle1: 0.696
-        muscle2: 0.696
-        muscle3: 0.696
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       ring:
-        spread: -0.34
-        muscle1: 0.696
-        muscle2: 0.696
-        muscle3: 0.696
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       little:
-        spread: -0.34
-        muscle1: 0.696
-        muscle2: 0.696
-        muscle3: 0.696
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+    rightHandPose:
+      thumb:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      index:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      middle:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      ring:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      little:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
 --- !u!114 &114215561683179904
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4841,7 +2929,7 @@ MonoBehaviour:
   m_OpenClipOffsetPosition: {x: 0, y: 0, z: 0}
   m_OpenClipOffsetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_OpenClipTimeOffset: 0
-  m_MatchTargetFields: 62
+  m_MatchTargetFields: 60
   m_Position: {x: 1, y: 1.8750471, z: 0}
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_ApplyOffsets: 0
@@ -4946,32 +3034,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     presets: {fileID: 11400000, guid: 067d8a51cdded4e4c96875f649beee12, type: 2}
-    handPose:
+    leftHandPose:
       thumb:
-        spread: -1
-        muscle1: -0.66
-        muscle2: -0.467
-        muscle3: 0.106
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       index:
-        spread: -0.339
-        muscle1: -0.383
-        muscle2: 0.371
-        muscle3: -0.134
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       middle:
-        spread: 0.018
-        muscle1: 0.28
-        muscle2: 0.212
-        muscle3: 1
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       ring:
-        spread: -1
-        muscle1: 0.518
-        muscle2: 0.665
-        muscle3: 1
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       little:
-        spread: -0.37
-        muscle1: 1
-        muscle2: 1
-        muscle3: 1
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+    rightHandPose:
+      thumb:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      index:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      middle:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      ring:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      little:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
 --- !u!114 &114470395850902400
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5326,13 +3440,13 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 0.09999999999999959
+  - m_Start: 1.85
     m_ClipIn: 0
-    m_Asset: {fileID: 114060623357505546}
-    m_Duration: 29.900000000000002
+    m_Asset: {fileID: 114129599827752412}
+    m_Duration: 15.633333333333335
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114715062333956548}
-    m_EaseInDuration: 0.5
+    m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
@@ -5375,13 +3489,13 @@ MonoBehaviour:
     m_BlendInCurveMode: 0
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 74922387644013268}
+    m_AnimationCurves: {fileID: 74516019371554720}
     m_Recordable: 0
     m_PostExtrapolationMode: 0
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: Infinity
-    m_PreExtrapolationTime: 0.09999999999999959
-    m_DisplayName: RightHand
+    m_PreExtrapolationTime: 1.85
+    m_DisplayName: HandControllerPlayableClip
     m_Version: 1
 --- !u!114 &114780521776467244
 MonoBehaviour:
@@ -5413,7 +3527,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     presets: {fileID: 0}
-    handPose:
+    leftHandPose:
+      thumb:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      index:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      middle:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      ring:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      little:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+    rightHandPose:
       thumb:
         spread: 0
         muscle1: 0
@@ -5452,29 +3592,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     presets: {fileID: 11400000, guid: 067d8a51cdded4e4c96875f649beee12, type: 2}
-    handPose:
+    leftHandPose:
       thumb:
-        spread: -0.34
-        muscle1: 0.696
-        muscle2: 0.696
-        muscle3: 0.696
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       index:
-        spread: -0.34
-        muscle1: 0.696
-        muscle2: 0.696
-        muscle3: 0.696
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       middle:
-        spread: -0.34
-        muscle1: 0.696
-        muscle2: 0.696
-        muscle3: 0.696
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       ring:
-        spread: -0.34
-        muscle1: 0.696
-        muscle2: 0.696
-        muscle3: 0.696
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
       little:
-        spread: -0.34
-        muscle1: 0.696
-        muscle2: 0.696
-        muscle3: 0.696
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+    rightHandPose:
+      thumb:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      index:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      middle:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      ring:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0
+      little:
+        spread: 0
+        muscle1: 0
+        muscle2: 0
+        muscle3: 0

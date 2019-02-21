@@ -296,7 +296,7 @@ GameObject:
   m_PrefabParentObject: {fileID: 1457653863030050, guid: d4d2dc8bf09e74fd5a7b14453591732d,
     type: 2}
   m_PrefabInternal: {fileID: 1826896717}
---- !u!114 &1521733950
+--- !u!114 &1521733945
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -304,16 +304,62 @@ MonoBehaviour:
   m_GameObject: {fileID: 1521733944}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02948fd5779174f18b0ef66a2cc9111d, type: 3}
+  m_Script: {fileID: 11500000, guid: 392715ed945644e6db2a798e972cf797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_inputs:
-  - hand: 0
-    inputName: Vertical
-    presetIndex: 3
-  - hand: 1
-    inputName: Horizontal
-    presetIndex: 4
+  m_preset: {fileID: 0}
+  m_leftHandPoseData:
+    thumb:
+      spread: -0.097
+      muscle1: 0
+      muscle2: 0
+      muscle3: 0
+    index:
+      spread: -0.097
+      muscle1: 0
+      muscle2: 0
+      muscle3: 0
+    middle:
+      spread: -0.097
+      muscle1: 0
+      muscle2: 0
+      muscle3: 0
+    ring:
+      spread: -0.097
+      muscle1: 0
+      muscle2: 0
+      muscle3: 0
+    little:
+      spread: -0.097
+      muscle1: 0
+      muscle2: 0
+      muscle3: 0
+  m_rightHandPoseData:
+    thumb:
+      spread: -0.097
+      muscle1: 0
+      muscle2: 0
+      muscle3: 0
+    index:
+      spread: -0.097
+      muscle1: 0
+      muscle2: 0
+      muscle3: 0
+    middle:
+      spread: -0.097
+      muscle1: 0
+      muscle2: 0
+      muscle3: 0
+    ring:
+      spread: -0.097
+      muscle1: 0
+      muscle2: 0
+      muscle3: 0
+    little:
+      spread: -0.097
+      muscle1: 0
+      muscle2: 0
+      muscle3: 0
 --- !u!1001 &1826896717
 Prefab:
   m_ObjectHideFlags: 0
@@ -327,7 +373,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4475427454515296, guid: d4d2dc8bf09e74fd5a7b14453591732d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.862
+      value: 0.44
       objectReference: {fileID: 0}
     - target: {fileID: 4475427454515296, guid: d4d2dc8bf09e74fd5a7b14453591732d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -353,7 +399,214 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.thumb.spread
+      value: -0.054
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.index.spread
+      value: -0.054
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.middle.spread
+      value: -0.054
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.ring.spread
+      value: -0.054
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.little.spread
+      value: -0.054
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.thumb.spread
+      value: -0.054
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.index.spread
+      value: -0.054
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.middle.spread
+      value: -0.054
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.ring.spread
+      value: -0.054
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.little.spread
+      value: -0.054
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.thumb.muscle1
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.thumb.muscle2
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.thumb.muscle3
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.index.muscle1
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.index.muscle2
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.index.muscle3
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.middle.muscle1
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.middle.muscle2
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.middle.muscle3
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.ring.muscle1
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.ring.muscle2
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.ring.muscle3
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.little.muscle1
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.little.muscle2
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_leftHandPoseData.little.muscle3
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.thumb.muscle1
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.thumb.muscle2
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.thumb.muscle3
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.index.muscle1
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.index.muscle2
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.index.muscle3
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.middle.muscle1
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.middle.muscle2
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.middle.muscle3
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.ring.muscle1
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.ring.muscle2
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.ring.muscle3
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.little.muscle1
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.little.muscle2
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_rightHandPoseData.little.muscle3
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114245000156931754, guid: d4d2dc8bf09e74fd5a7b14453591732d, type: 2}
+    - {fileID: 114967024694303720, guid: d4d2dc8bf09e74fd5a7b14453591732d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d4d2dc8bf09e74fd5a7b14453591732d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1984091168

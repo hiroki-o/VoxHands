@@ -9,6 +9,7 @@ namespace Vox.Hands
     public class HandControllerPlayableBehaviour : PlayableBehaviour
     {
         public HandPosePresetsAsset presets;
-        public HandPoseData handPose;
+        public HandPoseData leftHandPose;
+        public HandPoseData rightHandPose;
     }
 }

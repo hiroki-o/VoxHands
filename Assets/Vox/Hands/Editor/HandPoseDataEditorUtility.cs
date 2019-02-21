@@ -116,282 +116,244 @@ namespace Vox.Hands {
 	[Serializable]
 	public class HandPoseDataEditorUtility {
 
-		private FingerProperties[] m_fingers;
-		private bool[] m_foldouts;
-		private bool m_presetFoldout;
-		private string m_presetFilter;
-		private Vector2 m_presetScroll;
+		private readonly FingerProperties[] m_leftFingers;
+		private readonly FingerProperties[] m_rightFingers;
 
-		public FingerProperties[] Fingers
+		public FingerProperties[] LeftFingers
 		{
 			get
 			{
-				return m_fingers;
+				return m_leftFingers;
 			}
 		}
 
-		private float AllSpread
+		public FingerProperties[] RightFingers
 		{
-			get { return m_fingers.Sum(f => f.Spread) / m_fingers.Length; }
+			get
+			{
+				return m_rightFingers;
+			}
+		}
+		
+		public float AllSpread
+		{
+			get { return (AllLeftSpread + AllRightSpread) /2f; }
 			set
 			{
-				foreach (var finger in m_fingers)
+				AllLeftSpread = value;
+				AllRightSpread = value;
+			}
+		}
+		
+		public float AllFingersMuscle
+		{
+			get { return (AllLeftFingersMuscle + AllRightFingersMuscle) /2f; }
+			set
+			{
+				AllLeftFingersMuscle = value;
+				AllRightFingersMuscle = value;
+			}
+		}
+		
+		public float AllLeftSpread
+		{
+			get { return m_leftFingers.Sum(f => f.Spread) / m_leftFingers.Length; }
+			set
+			{
+				foreach (var finger in m_leftFingers)
 				{
 					finger.Spread = value;
 				}
 			}
 		}
 		
-		private float AllFingersMuscle
+		public float AllLeftFingersMuscle
 		{
-			get { return m_fingers.Sum(f => f.MuscleAll) / m_fingers.Length; }
+			get { return m_leftFingers.Sum(f => f.MuscleAll) / m_leftFingers.Length; }
 			set
 			{
-				foreach (var finger in m_fingers)
+				foreach (var finger in m_leftFingers)
+				{
+					finger.MuscleAll = value;
+				}
+			}
+		}
+		
+		public float AllRightSpread
+		{
+			get { return m_rightFingers.Sum(f => f.Spread) / m_rightFingers.Length; }
+			set
+			{
+				foreach (var finger in m_rightFingers)
+				{
+					finger.Spread = value;
+				}
+			}
+		}
+		
+		public float AllRightFingersMuscle
+		{
+			get { return m_rightFingers.Sum(f => f.MuscleAll) / m_rightFingers.Length; }
+			set
+			{
+				foreach (var finger in m_rightFingers)
 				{
 					finger.MuscleAll = value;
 				}
 			}
 		}
 
-		public HandPoseDataEditorUtility(SerializedObject serializedObject, string rootPropertyPath)
+		public HandPoseDataEditorUtility(SerializedObject serializedObject, string leftRootPropertyPath, string rightRootPropertyPath)
 		{
-			m_fingers = new[]
+			m_leftFingers = new[]
 			{
-				new FingerProperties(serializedObject, rootPropertyPath, "Thumb"), 
-				new FingerProperties(serializedObject, rootPropertyPath, "Index"), 
-				new FingerProperties(serializedObject, rootPropertyPath, "Middle"), 
-				new FingerProperties(serializedObject, rootPropertyPath, "Ring"), 
-				new FingerProperties(serializedObject, rootPropertyPath, "Little")
+				new FingerProperties(serializedObject, leftRootPropertyPath, "Thumb"), 
+				new FingerProperties(serializedObject, leftRootPropertyPath, "Index"), 
+				new FingerProperties(serializedObject, leftRootPropertyPath, "Middle"), 
+				new FingerProperties(serializedObject, leftRootPropertyPath, "Ring"), 
+				new FingerProperties(serializedObject, leftRootPropertyPath, "Little")
 			};
-			
-			m_foldouts = new bool[m_fingers.Length];
-		}
-		
-		public HandPoseDataEditorUtility(SerializedProperty serializedProperty, string rootPropertyPath)
-		{
-			m_fingers = new[]
+			m_rightFingers = new[]
 			{
-				new FingerProperties(serializedProperty, rootPropertyPath, "Thumb"), 
-				new FingerProperties(serializedProperty, rootPropertyPath, "Index"), 
-				new FingerProperties(serializedProperty, rootPropertyPath, "Middle"), 
-				new FingerProperties(serializedProperty, rootPropertyPath, "Ring"), 
-				new FingerProperties(serializedProperty, rootPropertyPath, "Little")
+				new FingerProperties(serializedObject, rightRootPropertyPath, "Thumb"), 
+				new FingerProperties(serializedObject, rightRootPropertyPath, "Index"), 
+				new FingerProperties(serializedObject, rightRootPropertyPath, "Middle"), 
+				new FingerProperties(serializedObject, rightRootPropertyPath, "Ring"), 
+				new FingerProperties(serializedObject, rightRootPropertyPath, "Little")
 			};
-			
-			m_foldouts = new bool[m_fingers.Length];
 		}
 		
-
-		public void DrawFingerControls(HandPosePresetsAsset presetsAsset)
+		public HandPoseDataEditorUtility(SerializedProperty serializedProperty, string leftRootPropertyPath, string rightRootPropertyPath)
 		{
-			var allSpreadValue = AllSpread;
-			var newAllSpreadValue = EditorGUILayout.Slider("Spread", allSpreadValue, -1f, 1f);
-			if (allSpreadValue != newAllSpreadValue)
+			m_leftFingers = new[]
 			{
-				AllSpread = newAllSpreadValue;
-			}
-			
-			var allFingersMuscleValue = AllFingersMuscle;
-			var newAllFingersMuscleValue = EditorGUILayout.Slider("Muscles", allFingersMuscleValue, -1f, 1f);
-			if (allFingersMuscleValue != newAllFingersMuscleValue)
+				new FingerProperties(serializedProperty, leftRootPropertyPath, "Thumb"), 
+				new FingerProperties(serializedProperty, leftRootPropertyPath, "Index"), 
+				new FingerProperties(serializedProperty, leftRootPropertyPath, "Middle"), 
+				new FingerProperties(serializedProperty, leftRootPropertyPath, "Ring"), 
+				new FingerProperties(serializedProperty, leftRootPropertyPath, "Little")
+			};
+			m_rightFingers = new[]
 			{
-				AllFingersMuscle = newAllFingersMuscleValue;
-			}
-
-			GUILayout.Space(12f);
-
-			for (var i = 0; i < m_fingers.Length; ++i)
-			{
-				var finger = m_fingers[i];
-				m_foldouts[i] = EditorGUILayout.Foldout(m_foldouts[i], string.Format("{0} finger", finger.FingerName));
-				if (m_foldouts[i]) 
-				{
-					using (new EditorGUILayout.VerticalScope(GUI.skin.box)) 
-					{
-						GUILayout.Space(4f);
-						var allMuscleValue = finger.MuscleAll;
-						var newAllMuscleValue = EditorGUILayout.Slider("All", allMuscleValue, -1f, 1f);
-						if (allMuscleValue != newAllMuscleValue)
-						{
-							finger.MuscleAll = newAllMuscleValue;
-						}
-
-						EditorGUILayout.Slider(finger.PropSpread, -1f, 1f, "Spread");
-						GUILayout.Space(4f);
-						EditorGUILayout.Slider(finger.PropMuscle1, -1f, 1f, "1st");
-						EditorGUILayout.Slider(finger.PropMuscle2, -1f, 1f, "2nd");
-						EditorGUILayout.Slider(finger.PropMuscle3, -1f, 1f, "3rd");
-					}
-				}
-				GUILayout.Space(8f);
-			}
-
-			DrawHandPosePreset(presetsAsset);
+				new FingerProperties(serializedProperty, rightRootPropertyPath, "Thumb"), 
+				new FingerProperties(serializedProperty, rightRootPropertyPath, "Index"), 
+				new FingerProperties(serializedProperty, rightRootPropertyPath, "Middle"), 
+				new FingerProperties(serializedProperty, rightRootPropertyPath, "Ring"), 
+				new FingerProperties(serializedProperty, rightRootPropertyPath, "Little")
+			};
 		}
-
-		public void DrawFingerControls(Rect position, HandPosePresetsAsset presetsAsset)
-		{
-            var singleFieldRect = new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight);
-			
-			var allSpreadValue = AllSpread;
-			var newAllSpreadValue = EditorGUI.Slider(singleFieldRect, "Spread", allSpreadValue, -1f, 1f);
-			if (allSpreadValue != newAllSpreadValue)
-			{
-				AllSpread = newAllSpreadValue;
-			}
-			
-			var allFingersMuscleValue = AllFingersMuscle;
-			singleFieldRect.y += EditorGUIUtility.singleLineHeight;
-			var newAllFingersMuscleValue = EditorGUI.Slider(singleFieldRect,"Muscles", allFingersMuscleValue, -1f, 1f);
-			if (allFingersMuscleValue != newAllFingersMuscleValue)
-			{
-				AllFingersMuscle = newAllFingersMuscleValue;
-			}
-
-			singleFieldRect.y += 12f;
-
-			for (var i = 0; i < m_fingers.Length; ++i)
-			{
-				var finger = m_fingers[i];
-				singleFieldRect.y += 4f;
-				var allMuscleValue = finger.MuscleAll;
-				singleFieldRect.y += EditorGUIUtility.singleLineHeight;
-				var newAllMuscleValue = EditorGUI.Slider(singleFieldRect,finger.FingerName + " All", allMuscleValue, -1f, 1f);
-				if (allMuscleValue != newAllMuscleValue)
-				{
-					finger.MuscleAll = newAllMuscleValue;
-				}
-
-				singleFieldRect.y += EditorGUIUtility.singleLineHeight;
-				EditorGUI.Slider(singleFieldRect, finger.PropSpread, -1f, 1f, finger.FingerName + " Spread");
-				singleFieldRect.y += 4f;
-				singleFieldRect.y += EditorGUIUtility.singleLineHeight;
-				EditorGUI.Slider(singleFieldRect, finger.PropMuscle1, -1f, 1f, finger.FingerName + " 1st");
-				singleFieldRect.y += EditorGUIUtility.singleLineHeight;
-				EditorGUI.Slider(singleFieldRect, finger.PropMuscle2, -1f, 1f, finger.FingerName + " 2nd");
-				singleFieldRect.y += EditorGUIUtility.singleLineHeight;
-				EditorGUI.Slider(singleFieldRect, finger.PropMuscle3, -1f, 1f, finger.FingerName + " 3rd");
-				singleFieldRect.y += 8f;
-			}
-			singleFieldRect.y += 32f;
-
-			DrawHandPosePreset(new Rect(singleFieldRect.x, singleFieldRect.y, position.width, position.height - (singleFieldRect.y - position.y)), 
-				presetsAsset);
-		}
-		
-		private void DrawHandPosePreset(HandPosePresetsAsset presetsAsset)
-		{
-			m_presetFoldout = EditorGUILayout.Foldout(m_presetFoldout, "Presets");
-			if (m_presetFoldout)
-			{
-				m_presetFilter = EditorGUILayout.TextField("Filter", m_presetFilter);
-
-				m_presetScroll = GUILayout.BeginScrollView(m_presetScroll, GUI.skin.box, GUILayout.Height(174f));
-				using (new EditorGUILayout.HorizontalScope())
-				{
-					var presets = string.IsNullOrEmpty(m_presetFilter)
-						? presetsAsset.SavedPresets
-						: presetsAsset.SavedPresets.Where(p => p.Name.ToLower().Contains(m_presetFilter.ToLower()));
-					foreach (var preset in presets)
-					{
-						if (GUILayout.Button(new GUIContent(preset.HandPoseImage, preset.Name), GUILayout.Width(150f), GUILayout.Height(150f)))
-						{
-							ApplyPreset(preset);
-						}						
-					}					
-				}
-
-				GUILayout.EndScrollView();
-			}
-		}
-		
-		private void DrawHandPosePreset(Rect position, HandPosePresetsAsset presetsAsset)
-		{
-			var singleFieldRect = new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight);
-			GUI.Label(singleFieldRect,"Presets", "BoldLabel");
-			singleFieldRect.y += EditorGUIUtility.singleLineHeight;
-			m_presetFilter = EditorGUI.TextField(singleFieldRect,"Filter", m_presetFilter);
-			singleFieldRect.y += EditorGUIUtility.singleLineHeight;
-
-			singleFieldRect.y += 12f;
-
-			var presets = string.IsNullOrEmpty(m_presetFilter)
-				? presetsAsset.SavedPresets
-				: presetsAsset.SavedPresets.Where(p => p.Name.ToLower().Contains(m_presetFilter.ToLower()));
-			
-			var posRect = new Rect(position.x, singleFieldRect.y, position.width, 174f);
-			var viewRect = new Rect(0f, 0f, presets.Count() * 154f, 150f);
-
-			m_presetScroll = GUI.BeginScrollView( posRect, m_presetScroll, viewRect, true, false);
-			
-			var buttonRect = new Rect(0f, 0f, 150f, 150f);
-			
-			foreach (var preset in presets)
-			{
-				if (GUI.Button(buttonRect, new GUIContent(preset.HandPoseImage, preset.Name)))
-				{
-					ApplyPreset(preset);
-				}
-				buttonRect.x += 154f;
-			}					
-
-			GUI.EndScrollView();
-		}
-		
-		
-		private void ApplyPreset(HandPosePreset preset)
+				
+		public void ApplyPreset(HandPosePreset preset, HandType hand)
 		{
 			var pose = preset.HandPoseData;
-			for (var f = 0; f < HandPoseData.HumanFingerCount; ++f)
+			if (hand == HandType.LeftHand)
 			{
-				m_fingers[f].Spread	= pose[f].spread;
-				m_fingers[f].Muscle1 = pose[f].muscle1;
-				m_fingers[f].Muscle2 = pose[f].muscle2;
-				m_fingers[f].Muscle3 = pose[f].muscle3;
+				for (var f = 0; f < HandPoseData.HumanFingerCount; ++f)
+				{
+					m_leftFingers[f].Spread	= pose[f].spread;
+					m_leftFingers[f].Muscle1 = pose[f].muscle1;
+					m_leftFingers[f].Muscle2 = pose[f].muscle2;
+					m_leftFingers[f].Muscle3 = pose[f].muscle3;
+				}
+			}
+			else
+			{
+				for (var f = 0; f < HandPoseData.HumanFingerCount; ++f)
+				{
+					m_rightFingers[f].Spread	= pose[f].spread;
+					m_rightFingers[f].Muscle1 = pose[f].muscle1;
+					m_rightFingers[f].Muscle2 = pose[f].muscle2;
+					m_rightFingers[f].Muscle3 = pose[f].muscle3;
+				}
 			}
 		}
 
-		public void SaveCurrentToPreset(HandPosePresetsAsset presetsAsset, string name, Texture2D icon)
+		public void SaveCurrentToPreset(HandPosePresetsAsset presetsAsset, HandType hand, string name, Texture2D icon)
 		{
-			var pose = new HandPoseData
+			HandPoseData pose;
+
+			if (hand == HandType.LeftHand)
 			{
-				thumb =
+				pose = new HandPoseData
 				{
-					spread = m_fingers[0].Spread,
-					muscle1 = m_fingers[0].Muscle1,
-					muscle2 = m_fingers[0].Muscle2,
-					muscle3 = m_fingers[0].Muscle3
-				},
-				index =
+					thumb =
+					{
+						spread  = m_leftFingers[0].Spread,
+						muscle1 = m_leftFingers[0].Muscle1,
+						muscle2 = m_leftFingers[0].Muscle2,
+						muscle3 = m_leftFingers[0].Muscle3
+					},
+					index =
+					{
+						spread  = m_leftFingers[1].Spread,
+						muscle1 = m_leftFingers[1].Muscle1,
+						muscle2 = m_leftFingers[1].Muscle2,
+						muscle3 = m_leftFingers[1].Muscle3
+					},
+					middle =
+					{
+						spread  = m_leftFingers[2].Spread,
+						muscle1 = m_leftFingers[2].Muscle1,
+						muscle2 = m_leftFingers[2].Muscle2,
+						muscle3 = m_leftFingers[2].Muscle3
+					},
+					ring =
+					{
+						spread  = m_leftFingers[3].Spread,
+						muscle1 = m_leftFingers[3].Muscle1,
+						muscle2 = m_leftFingers[3].Muscle2,
+						muscle3 = m_leftFingers[3].Muscle3
+					},
+					little =
+					{
+						spread  = m_leftFingers[4].Spread,
+						muscle1 = m_leftFingers[4].Muscle1,
+						muscle2 = m_leftFingers[4].Muscle2,
+						muscle3 = m_leftFingers[4].Muscle3
+					}
+				};
+			}
+			else
+			{
+				pose = new HandPoseData
 				{
-					spread = m_fingers[1].Spread,
-					muscle1 = m_fingers[1].Muscle1,
-					muscle2 = m_fingers[1].Muscle2,
-					muscle3 = m_fingers[1].Muscle3
-				},
-				middle =
-				{
-					spread = m_fingers[2].Spread,
-					muscle1 = m_fingers[2].Muscle1,
-					muscle2 = m_fingers[2].Muscle2,
-					muscle3 = m_fingers[2].Muscle3
-				},
-				ring =
-				{
-					spread = m_fingers[3].Spread,
-					muscle1 = m_fingers[3].Muscle1,
-					muscle2 = m_fingers[3].Muscle2,
-					muscle3 = m_fingers[3].Muscle3
-				},
-				little =
-				{
-					spread = m_fingers[4].Spread,
-					muscle1 = m_fingers[4].Muscle1,
-					muscle2 = m_fingers[4].Muscle2,
-					muscle3 = m_fingers[4].Muscle3
-				}
-			};
+					thumb =
+					{
+						spread  = m_rightFingers[0].Spread,
+						muscle1 = m_rightFingers[0].Muscle1,
+						muscle2 = m_rightFingers[0].Muscle2,
+						muscle3 = m_rightFingers[0].Muscle3
+					},
+					index =
+					{
+						spread  = m_rightFingers[1].Spread,
+						muscle1 = m_rightFingers[1].Muscle1,
+						muscle2 = m_rightFingers[1].Muscle2,
+						muscle3 = m_rightFingers[1].Muscle3
+					},
+					middle =
+					{
+						spread  = m_rightFingers[2].Spread,
+						muscle1 = m_rightFingers[2].Muscle1,
+						muscle2 = m_rightFingers[2].Muscle2,
+						muscle3 = m_rightFingers[2].Muscle3
+					},
+					ring =
+					{
+						spread  = m_rightFingers[3].Spread,
+						muscle1 = m_rightFingers[3].Muscle1,
+						muscle2 = m_rightFingers[3].Muscle2,
+						muscle3 = m_rightFingers[3].Muscle3
+					},
+					little =
+					{
+						spread  = m_rightFingers[4].Spread,
+						muscle1 = m_rightFingers[4].Muscle1,
+						muscle2 = m_rightFingers[4].Muscle2,
+						muscle3 = m_rightFingers[4].Muscle3
+					}
+				};
+			}
 
 			var newPreset = new HandPosePreset(name, ref pose, icon);			
 			presetsAsset.AddNewPreset(newPreset);

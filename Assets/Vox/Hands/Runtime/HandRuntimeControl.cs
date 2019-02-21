@@ -111,50 +111,71 @@ namespace Vox.Hands
         private readonly int[] m_handBoneIndexMap;
         private readonly HumanPoseHandler m_poseHandler;
         private HumanPose m_humanPose;
+        private GameObject m_rootObject;
 
-        public HandRuntimeControl(GameObject rootObject, Avatar avatar, HandType handType)
+        private const int kIndexMuscleFingerBegin = 55;
+
+        public HandRuntimeControl(GameObject rootObject, Avatar avatar)
         {
+            m_rootObject = rootObject;
             m_poseHandler = new HumanPoseHandler(avatar, rootObject.transform);
-            m_handBoneIndexMap = new int[20];
-
-            var indexMuscleFingerBegin = handType == HandType.LeftHand ? 55 : 75;
-            
-            m_poseHandler.GetHumanPose(ref m_humanPose);
+            m_handBoneIndexMap = new int[20 * 2]; // left & right
 
             for (var i = 0; i < m_handBoneIndexMap.Length; ++i)
             {
-                m_handBoneIndexMap[i] = indexMuscleFingerBegin + i;
+                m_handBoneIndexMap[i] = kIndexMuscleFingerBegin + i;
             }
         }
 
-        public void UpdateHandPose(ref HandPoseData handPose)
-        {
+        public void UpdateHandPose(ref HandPoseData leftHandPose, ref HandPoseData rightHandPose)
+        {            
             m_poseHandler.GetHumanPose(ref m_humanPose);
             
-            m_humanPose.bodyPosition = Vector3.zero;
-            m_humanPose.bodyRotation = Quaternion.identity;
+            m_humanPose.bodyPosition = m_rootObject.transform.position;
+            m_humanPose.bodyRotation = m_rootObject.transform.rotation;
             
             var i = 0;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.thumb.muscle1;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.thumb.spread;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.thumb.muscle2;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.thumb.muscle3;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.index.muscle1;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.index.spread;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.index.muscle2;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.index.muscle3;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.middle.muscle1;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.middle.spread;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.middle.muscle2;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.middle.muscle3;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.ring.muscle1;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.ring.spread;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.ring.muscle2;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.ring.muscle3;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.little.muscle1;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.little.spread;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.little.muscle2;
-            m_humanPose.muscles[m_handBoneIndexMap[i++]] = handPose.little.muscle3;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.thumb.muscle1;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.thumb.spread;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.thumb.muscle2;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.thumb.muscle3;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.index.muscle1;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.index.spread;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.index.muscle2;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.index.muscle3;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.middle.muscle1;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.middle.spread;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.middle.muscle2;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.middle.muscle3;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.ring.muscle1;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.ring.spread;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.ring.muscle2;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.ring.muscle3;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.little.muscle1;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.little.spread;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.little.muscle2;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = leftHandPose.little.muscle3;
+            
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.thumb.muscle1;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.thumb.spread;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.thumb.muscle2;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.thumb.muscle3;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.index.muscle1;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.index.spread;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.index.muscle2;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.index.muscle3;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.middle.muscle1;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.middle.spread;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.middle.muscle2;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.middle.muscle3;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.ring.muscle1;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.ring.spread;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.ring.muscle2;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.ring.muscle3;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.little.muscle1;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.little.spread;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.little.muscle2;
+            m_humanPose.muscles[m_handBoneIndexMap[i++]] = rightHandPose.little.muscle3;
             
             m_poseHandler.SetHumanPose(ref m_humanPose);
         }

@@ -19,7 +19,8 @@ namespace Vox.Hands
 
             var inputCount = playable.GetInputCount();
 
-            var handPose = new HandPoseData();
+            var leftHandPose = new HandPoseData();
+            var rightHandPose = new HandPoseData();
             
             for (var i = 0; i < inputCount; i++)
             {
@@ -30,10 +31,12 @@ namespace Vox.Hands
 
                 // Use the above variables to process each frame of this playable.
 
-                handPose.WeightedAddPose(inputWeight, ref input.handPose);
+                leftHandPose.WeightedAddPose(inputWeight, ref input.leftHandPose);
+                rightHandPose.WeightedAddPose(inputWeight, ref input.rightHandPose);
             }
 
-            trackBinding.SetHandPose(ref handPose);
+            trackBinding.SetHandPose(ref leftHandPose, HandType.LeftHand);
+            trackBinding.SetHandPose(ref rightHandPose, HandType.RightHand);
         }
     }
 }

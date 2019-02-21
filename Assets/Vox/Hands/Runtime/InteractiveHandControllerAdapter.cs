@@ -17,23 +17,12 @@ public class InteractiveHandControllerAdapter : MonoBehaviour
 
     [SerializeField] private InputConfig[] m_inputs;
 
-    private HandController m_leftHand;
-    private HandController m_rightHand;
+    private HandController m_hc;
     
     // Start is called before the first frame update
     void Start()
     {
-        foreach (var c in GetComponents<HandController>())
-        {
-            if (c.Hand == HandType.LeftHand)
-            {
-                m_leftHand = c;
-            }
-            else
-            {
-                m_rightHand = c;
-            }
-        }
+        m_hc = GetComponent<HandController>();
     }
 
     // Update is called once per frame
@@ -43,20 +32,7 @@ public class InteractiveHandControllerAdapter : MonoBehaviour
         {
             foreach (var input in m_inputs)
             {
-                if (input.hand == HandType.LeftHand)
-                {
-                    if (m_leftHand != null)
-                    {
-                        m_leftHand.SetHandPose(input.presetIndex, Input.GetAxis(input.inputName));
-                    }
-                }
-                else
-                {
-                    if (m_rightHand != null)
-                    {
-                        m_rightHand.SetHandPose(input.presetIndex, Input.GetAxis(input.inputName));                        
-                    }
-                }
+                m_hc.SetHandPose(input.presetIndex, input.hand, Input.GetAxis(input.inputName));
             }
         }
     }

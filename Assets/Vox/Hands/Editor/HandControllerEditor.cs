@@ -543,8 +543,10 @@ namespace Vox.Hands
                 var resolutionRatio = Mathf.Round(SceneView.lastActiveSceneView.camera.pixelHeight /
                                                   SceneView.lastActiveSceneView.position.height);
 
-                // Camera coordinate Y is inverted from mouse coordinate
-                var cameraY = camera.targetTexture.height - resolutionRatio * (m_selectPoint.y + kPresetIconSize);
+                // Mac: Camera coordinate Y is inverted from mouse coordinate
+                var cameraY = (Application.platform == RuntimePlatform.WindowsEditor) ?
+                    resolutionRatio * m_selectPoint.y : 
+                    camera.targetTexture.height - resolutionRatio * (m_selectPoint.y + kPresetIconSize);
                 var cameraX = resolutionRatio * m_selectPoint.x;
 
                 var texSize = Mathf.FloorToInt(kPresetIconSize * resolutionRatio);

@@ -28,7 +28,9 @@ namespace Vox.Hands
             set
             {
                 m_handType = value;
-                InitializeRuntimeControl();
+                if(m_runtimeControl == null){
+                    InitializeRuntimeControl();
+                }
             }
         }
 
@@ -143,6 +145,7 @@ namespace Vox.Hands
 
         public void InitializeRuntimeControl()
         {
+            if (m_runtimeControl != null) return;
             var animator = GetComponent<Animator>();
             m_avatar = animator.avatar;
 
